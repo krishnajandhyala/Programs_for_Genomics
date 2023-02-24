@@ -1,6 +1,6 @@
 #Usage python3 DNA2RNA.py > output_RNA.fasta
 
-with open("test.fasta", "r") as f:
+with open(input("Enter Multifasta file path\t:\t"), "r") as f:
     for line in f:
         if line.startswith(">"):
             print(line.strip())
