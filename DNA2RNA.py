@@ -10,7 +10,7 @@ with open(input("Enter the path of the multifasta file \t:\t"), "r") as f:
         else:
             current_sequence += line.strip()
     sequences[header] = current_sequence
-with open("output.fasta", "w") as f:
+with open("output_DNA2RNA.fasta", "w") as f:
     for header, sequence in sequences.items():
         rna_sequence = sequence.replace("T", "U")
         f.write(">" + header + "\n")
