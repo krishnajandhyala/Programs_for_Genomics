@@ -1,4 +1,4 @@
-with open("test.fasta", "r") as f:
+with open(input("Enter the path of the multifasta file \t:\t"), "r") as f:
     sequences = {}
     current_sequence = ""
     for line in f:
