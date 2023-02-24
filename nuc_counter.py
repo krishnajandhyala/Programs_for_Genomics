@@ -4,7 +4,7 @@ A=T=G=C=N=0
 with open(input("Enter fasta file path \t:\t"), "r") as f:
         for line in f:
                 if line.startswith(">"):
-                    print
+                    print()
                 else:
                     A += line.count("A")
                     T += line.count("T")
